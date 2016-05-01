@@ -1,5 +1,23 @@
 # Tenna API documentation
 
+* Devices
+    * [Your devices](#your-devices)
+    * [Creating a device](#creating-a-device)
+* Channels
+    * [Your channels](#your-channels)
+    * [Device channels](#device-channels)
+    * [Create a channel](#create-a-channel)
+* Events
+    * [Your event stream](#your-event-stream)
+    * [Device events](#device-events)
+    * [Channel events](#channel-events)
+    * [Creating an event](#creating-an-event)
+* Subscriptions
+    * [Device subscriptions](#device-subscriptions)
+    * [Channel subscriptions](#channel-subscriptions)
+    * [Creating a device subscription](#creating-a-device-subscription)
+    * [Creating a channel subscription](#creating-a-channel-subscription)
+
 ## Overview
 
 ### API keys
