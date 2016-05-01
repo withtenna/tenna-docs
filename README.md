@@ -85,7 +85,7 @@ Response:
 
 ## Events
 
-### Your events stream
+### Your event stream
 
     GET /events.json
 
