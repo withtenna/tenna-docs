@@ -2,7 +2,7 @@
 
 * Devices
     * [Your devices](#your-devices)
-    * [Creating a device](#creating-a-device)
+    * [Create a device](#create-a-device)
 * Channels
     * [Your channels](#your-channels)
     * [Device channels](#device-channels)
@@ -11,12 +11,12 @@
     * [Your event stream](#your-event-stream)
     * [Device events](#device-events)
     * [Channel events](#channel-events)
-    * [Creating an event](#creating-an-event)
+    * [Create an event](#create-an-event)
 * Subscriptions
     * [Device subscriptions](#device-subscriptions)
     * [Channel subscriptions](#channel-subscriptions)
-    * [Creating a device subscription](#creating-a-device-subscription)
-    * [Creating a channel subscription](#creating-a-channel-subscription)
+    * [Create a device subscription](#create-a-device-subscription)
+    * [Create a channel subscription](#create-a-channel-subscription)
 
 ## Overview
 
@@ -50,7 +50,7 @@ Response:
         ...
     ]
 
-### Creating a device
+### Create a device
 
     POST /devices.json
 
@@ -79,7 +79,7 @@ Response:
 
     GET /devices/[device_id]/channels.json
 
-### Creating a channel
+### Create a channel
 
     POST /channels.json
 
@@ -113,7 +113,7 @@ Response:
 
     GET /channels/[channel_id]/events.json
 
-### Creating an event
+### Create an event
 
     POST /devices/[device_id]/events/[kind].json
 
@@ -127,10 +127,10 @@ Response:
 
     GET /channels/[channel_id]/subscriptions.json
 
-### Creating a device subscription
+### Create a device subscription
 
     POST /devices/[device_id]/subscriptions.json
 
-### Creating a channel subscription
+### Create a channel subscription
 
     POST /channels/[channel_id]/subscriptions.json
