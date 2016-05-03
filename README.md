@@ -43,10 +43,10 @@ Response:
 ```json
 [
     {
-        _id: '570c4223ecd694f46f863350',
-        avatar: 'http://i.imgur.com/aJgYIZ8.jpg',
-        name: 'Hallway motion',
-        user_id: '56943c7b52cfc9f36540bf26'
+        _id: "570c4223ecd694f46f863350",
+        avatar: "http://i.imgur.com/aJgYIZ8.jpg",
+        name: "Hallway motion",
+        user_id: "56943c7b52cfc9f36540bf26"
     },
     ...
 ]
@@ -67,12 +67,12 @@ Response: `[Channel]`
 ```json
 [
     {
-        _id: '5719186f6ab7ba112776160e',
-        name: 'Silicon Valley weather',
-        description: 'Weather conditions around the Bay Area.',
+        _id: "5719186f6ab7ba112776160e",
+        name: "Silicon Valley weather",
+        description: "Weather conditions around the Bay Area.",
         device_ids: [
-            '571916b6821672841359909b',
-            '571900ce821672841359904f'
+            "571916b6821672841359909b",
+            "571900ce821672841359904f"
         ]
     },
     ...
@@ -115,12 +115,12 @@ Response:
 ```json
 [
     {
-        _id: '572642f02ab4788d0fc74dc0',
-        device_id: '56943e8e52cfc9f36540bf28',
-        kind: 'humidity',
+        _id: "572642f02ab4788d0fc74dc0",
+        device_id: "56943e8e52cfc9f36540bf28",
+        kind: "humidity",
         data: {
             value: 47.7,
-            unit: '%'
+            unit: "%"
         },
         created_at: 1462125296000
     },
@@ -135,6 +135,36 @@ Response:
 ### Create an event
 
     POST /devices/[device_id]/events/[kind].json
+
+Body: `Any` (common examples given)
+
+```json
+{
+    value: 53.6,
+    unit: "USD"
+}
+```
+
+```json
+{
+    on: false
+}
+```
+
+Response: `Event`
+
+```json
+{
+    _id: "572806472ab4788d0fc753d9",
+    device_id: "56943c9252cfc9f36540bf27",
+    kind: "temperature",
+    data: {
+        value: 75.1999,
+        unit: "F"
+    },
+    created_at: 1462240839000
+}
+```
 
 ## Subscriptions
 
