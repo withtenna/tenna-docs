@@ -40,15 +40,17 @@ Generate an API key by visiting [your settings page](http://api.tenna.io/setting
 
 Response:
 
-    [
-        {
-            _id: '570c4223ecd694f46f863350',
-            avatar: 'http://i.imgur.com/aJgYIZ8.jpg',
-            name: 'Hallway motion',
-            user_id: '56943c7b52cfc9f36540bf26'
-        },
-        ...
-    ]
+```json
+[
+    {
+        _id: '570c4223ecd694f46f863350',
+        avatar: 'http://i.imgur.com/aJgYIZ8.jpg',
+        name: 'Hallway motion',
+        user_id: '56943c7b52cfc9f36540bf26'
+    },
+    ...
+]
+```
 
 ### Create a device
 
@@ -60,24 +62,28 @@ Response:
 
     GET /channels.json
 
-Response:
+Response: `[Channel]`
 
-    [
-        {
-            _id: '5719186f6ab7ba112776160e',
-            description: 'Weather conditions around the Bay Area.',
-            device_ids: [
-                '571916b6821672841359909b',
-                '571900ce821672841359904f'
-            ],
-            name: 'Silicon Valley weather'
-        },
-        ...
-    ]
+```json
+[
+    {
+        _id: '5719186f6ab7ba112776160e',
+        name: 'Silicon Valley weather',
+        description: 'Weather conditions around the Bay Area.',
+        device_ids: [
+            '571916b6821672841359909b',
+            '571900ce821672841359904f'
+        ]
+    },
+    ...
+]
+```
 
 ### Device channels
 
     GET /devices/[device_id]/channels.json
+
+Response: `[Channel]`
 
 ### Create a channel
 
@@ -106,19 +112,21 @@ Response: `Channel`
 
 Response:
 
-    [
-        {
-            _id: '572642f02ab4788d0fc74dc0',
-            device_id: '56943e8e52cfc9f36540bf28',
-            kind: 'humidity',
-            data: {
-                value: 47.7,
-                unit: '%'
-            },
-            created_at: 1462125296000
+```json
+[
+    {
+        _id: '572642f02ab4788d0fc74dc0',
+        device_id: '56943e8e52cfc9f36540bf28',
+        kind: 'humidity',
+        data: {
+            value: 47.7,
+            unit: '%'
         },
-        ...
-    ]
+        created_at: 1462125296000
+    },
+    ...
+]
+```
 
 ### Channel events
 
