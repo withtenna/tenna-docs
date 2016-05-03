@@ -38,7 +38,7 @@ Generate an API key by visiting [your settings page](http://api.tenna.io/setting
 
     GET /devices.json
 
-Response:
+Response: `[Device]`
 
 ```json
 [
@@ -55,6 +55,10 @@ Response:
 ### Create a device
 
     POST /devices.json
+
+Body: `Device`
+
+Response: `Device`
 
 ## Channels
 
@@ -106,11 +110,13 @@ Response: `Channel`
 
     GET /events.json
 
+Response: `[Event]`
+
 ### Device events
 
     GET /devices/[device_id]/events.json
 
-Response:
+Response: `[Event]`
 
 ```json
 [
@@ -132,11 +138,13 @@ Response:
 
     GET /channels/[channel_id]/events.json
 
+Response: `[Event]`
+
 ### Create an event
 
     POST /devices/[device_id]/events/[kind].json
 
-Body: `Any` (common examples given)
+Body: `Data` (common examples given)
 
 ```json
 {
@@ -172,14 +180,26 @@ Response: `Event`
 
     GET /devices/[device_id]/subscriptions.json
 
+Response: `[Subscription]`
+
 ### Channel subscriptions
 
     GET /channels/[channel_id]/subscriptions.json
+
+Response: `[Subscription]`
 
 ### Create a device subscription
 
     POST /devices/[device_id]/subscriptions.json
 
+Body: `Subscription`
+
+Response: `Subscription`
+
 ### Create a channel subscription
 
     POST /channels/[channel_id]/subscriptions.json
+
+Body: `Subscription`
+
+Response: `Subscription`
