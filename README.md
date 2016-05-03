@@ -83,6 +83,17 @@ Response:
 
     POST /channels.json
 
+Body: `Channel`
+
+```json
+{
+    name: "Garden",
+    description: "Helping the plants grow with sensors"
+}
+```
+
+Response: `Channel`
+
 ## Events
 
 ### Your event stream
