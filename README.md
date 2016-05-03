@@ -58,6 +58,15 @@ Response: `[Device]`
 
 Body: `Device`
 
+```json
+{
+    name: "Office conditions",
+    kind: "barometer",
+    description: "Keeping the vessel afloat",
+    privacy: true
+}
+```
+
 Response: `Device`
 
 ## Channels
@@ -200,6 +209,20 @@ Response: `Subscription`
 
     POST /channels/[channel_id]/subscriptions.json
 
-Body: `Subscription`
+Body: `Subscription` (`WebhookSubscription | CommandSubscription`)
+
+```json
+{
+    kind: "webhook",
+    url: "http://webhooks.mcgill.net/events"
+}
+```
+
+```json
+{
+    kind: "command",
+    method: "turnOn"
+}
+```
 
 Response: `Subscription`
