@@ -40,7 +40,7 @@ Generate an API key by visiting [your settings page](http://api.tenna.io/setting
 
 Response: `[Device]`
 
-```json
+```javascript
 [
     {
         _id: "570c4223ecd694f46f863350",
@@ -58,7 +58,7 @@ Response: `[Device]`
 
 Body: `Device`
 
-```json
+```javascript
 {
     name: "Office conditions",
     kind: "barometer",
@@ -77,7 +77,7 @@ Response: `Device`
 
 Response: `[Channel]`
 
-```json
+```javascript
 [
     {
         _id: "5719186f6ab7ba112776160e",
@@ -104,7 +104,7 @@ Response: `[Channel]`
 
 Body: `Channel`
 
-```json
+```javascript
 {
     name: "Garden",
     description: "Helping the plants grow with sensors"
@@ -127,7 +127,7 @@ Response: `[Event]`
 
 Response: `[Event]`
 
-```json
+```javascript
 [
     {
         _id: "572642f02ab4788d0fc74dc0",
@@ -155,14 +155,14 @@ Response: `[Event]`
 
 Body: `Data` (common examples given)
 
-```json
+```javascript
 {
     value: 53.6,
     unit: "USD"
 }
 ```
 
-```json
+```javascript
 {
     on: false
 }
@@ -170,7 +170,7 @@ Body: `Data` (common examples given)
 
 Response: `Event`
 
-```json
+```javascript
 {
     _id: "572806472ab4788d0fc753d9",
     device_id: "56943c9252cfc9f36540bf27",
@@ -211,14 +211,14 @@ Response: `Subscription`
 
 Body: `Subscription` (`WebhookSubscription | CommandSubscription`)
 
-```json
+```javascript
 {
     kind: "webhook",
     url: "http://webhooks.mcgill.net/events"
 }
 ```
 
-```json
+```javascript
 {
     kind: "command",
     method: "turnOn"
